@@ -18,10 +18,12 @@ cd data
 sh download_data.sh 
 cd ..
 ```
-
-
- 
-Install the python dependencies via the following command:
+First of all, clone this repository to your local machine and access the main dir via the following command:
+```bash
+git clone https://github.com/awsm-research/VQM.git
+cd AutoVF
+```
+Then, install the python dependencies via the following command:
   
 ```bash
 cd AutoVF
@@ -86,6 +88,119 @@ Python 3.9.7 is recommended, which has been fully tested without issues.
        sh run_test.sh
        cd ..
        ```
+- **VulRepair**
 
+    - **Inference**
+        ```bash
+        cd baselines/VulRepair/saved_models/checkpoint-best-loss
+        sh download_models.sh
+        cd ../..
+        sh run_test.sh
+        cd ../..
+        ```
+
+    - **Retrain**
+       ```bash
+       cd baselines/VulRepair
+       sh run_pretrain.sh
+       sh run_train.sh
+       sh run_test.sh
+       cd ../..
+       ```
+ - **TFix**
+
+    - **Inference**
+        ```bash
+        cd baselines/TFix/saved_models/checkpoint-best-loss
+        sh download_models.sh
+        cd ../..
+        sh run_test.sh
+        cd ../..
+        ```
+
+    - **Retrain**
+       ```bash
+       cd baselines/TFix
+       sh run_pretrain.sh
+       sh run_train.sh
+       sh run_test.sh
+       cd ../..
+       ```
+  - **GraphCodeBERT**
+
+    - **Inference**
+        ```bash
+        cd baselines/GraphCodeBERT/saved_models/checkpoint-best-loss
+        sh download_models.sh
+        cd ../..
+        sh run_test.sh
+        cd ../..
+        ```
+
+    - **Retrain**
+       ```bash
+       cd baselines/GraphCodeBERT
+       sh run_pretrain.sh
+       sh run_train.sh
+       sh run_test.sh
+       cd ../..
+       ```
+  - **CodeBERT**
+
+    - **Inference**
+        ```bash
+        cd baselines/CodeBERT/saved_models/checkpoint-best-loss
+        sh download_models.sh
+        cd ../..
+        sh run_test.sh
+        cd ../..
+        ```
+
+    - **Retrain**
+       ```bash
+       cd baselines/CodeBERT
+       sh run_pretrain.sh
+       sh run_train.sh
+       sh run_test.sh
+       cd ../..
+       ```
+ - **VRepair**
+
+    - **Inference**
+        ```bash
+        cd baselines/VRepair/saved_models/checkpoint-best-loss
+        sh download_models.sh
+        cd ../..
+        sh run_test.sh
+        cd ../..
+        ```
+
+    - **Retrain**
+       ```bash
+       cd baselines/VRepair
+       sh run_pretrain.sh
+       sh run_train.sh
+       sh run_test.sh
+       cd ../..
+       ```
+  - **SequenceR**
+
+    - **Inference**
+        ```bash
+        cd baselines/SequenceR/saved_models/checkpoint-best-loss
+        sh download_models.sh
+        cd ../..
+        sh run_test.sh
+        cd ../..
+        ```
+
+    - **Retrain**
+       ```bash
+       cd baselines/SequenceR
+       sh run_pretrain.sh
+       sh run_train.sh
+       sh run_test.sh
+       cd ../..
+       ```
 
 
