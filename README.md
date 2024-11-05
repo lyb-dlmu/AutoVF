@@ -50,7 +50,7 @@ cd ..
 ```
 ### Retrain Repair Model
 ```bash
-cd NRlearn
+cd AutoVF
 sh run_pretrain.sh
 sh run_train.sh
 sh run_test.sh
