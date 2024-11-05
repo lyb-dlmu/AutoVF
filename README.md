@@ -18,9 +18,9 @@ cd data
 sh download_data.sh 
 cd ..
 ```
-## How to reprduce   
 
-  <summary>Environment Setup</summary>
+
+ 
 Install the python dependencies via the following command:
   
 ```bash
@@ -38,22 +38,28 @@ Python 3.9.7 is recommended, which has been fully tested without issues.
 
 
 
-## If you want to use our model,you need to follow these steps:
 
-## AutoVF (our Approach)
-### Retrain Localization Model
-```bash
-cd AutoVF
-sh run_pretrain_loc.sh
-sh run_train_loc.sh
-cd ..
-```
-### Retrain Repair Model
-```bash
-cd AutoVF
-sh run_pretrain.sh
-sh run_train.sh
-sh run_test.sh
-cd ..
-```
+### Reproduction of Experiments
+#### Reproduce Section 4 - RQ1
+
+- **NRLearn(Proposed Approach)**
+
+    - **Retrain Localization Model**
+        ```bash
+        cd AutoVF
+        sh run_pretrain_loc.sh
+        sh run_train_loc.sh
+        cd ..
+        ```
+
+    - **Retrain Repair Model**
+       ```bash
+       cd AutoVF
+       sh run_pretrain.sh
+       sh run_train.sh
+       sh run_test.sh
+       cd ..
+       ```
+
+
 
