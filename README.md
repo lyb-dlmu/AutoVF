@@ -202,5 +202,97 @@ Python 3.9.7 is recommended, which has been fully tested without issues.
        sh run_test.sh
        cd ../..
        ```
+#### Reproduce Section 4 - RQ2
+- **Only denoising**
+
+    - **Inference**
+        ```bash
+        cd AutoVF/AutoVF-main/ablation_model/only_denoising
+        sh run_pretrain_loc.sh
+        sh run_train_loc.sh
+        cd ..
+        ```
+
+    - **Retrain**
+       ```bash
+      cd AutoVF/AutoVF-main/ablation_model/only_denoising
+      sh run_pretrain.sh
+      sh run_train.sh
+      sh run_test.sh
+      cd ..
+       ```
+- **Only mixup**
+
+    - **Inference**
+        ```bash
+        cd AutoVF/AutoVF-main/ablation_model/only_mixup
+        sh run_pretrain_loc.sh
+        sh run_train_loc.sh
+        cd ..
+        ```
+
+    - **Retrain**
+       ```bash
+      cd AutoVF/AutoVF-main/ablation_model/only_mixup
+      sh run_pretrain.sh
+      sh run_train.sh
+      sh run_test.sh
+      cd ..
+       ```
+#### Reproduce Section 4 - RQ3
+- **co-teaching**
+
+    - **Inference**
+        ```bash
+        cd AutoVF/AutoVF-main/ablation_model/noise_label/co-teaching
+        sh run_pretrain_loc.sh
+        sh run_train_loc.sh
+        cd ..
+        ```
+
+    - **Retrain**
+       ```bash
+      cd AutoVF/AutoVF-main/ablation_model/noise_label/co-teaching
+      sh run_pretrain.sh
+      sh run_train.sh
+      sh run_test.sh
+      cd ..
+       ```
+- **co-teaching+**
+
+    - **Inference**
+        ```bash
+        cd AutoVF/AutoVF-main/ablation_model/noise_label/co-teaching+
+        sh run_pretrain_loc.sh
+        sh run_train_loc.sh
+        cd ..
+        ```
+
+    - **Retrain**
+       ```bash
+      cd AutoVF/AutoVF-main/ablation_model/noise_label/co-teaching+
+      sh run_pretrain.sh
+      sh run_train.sh
+      sh run_test.sh
+      cd ..
+       ```
+- **jocor**
+
+    - **Inference**
+        ```bash
+        cd AutoVF/AutoVF-main/ablation_model/noise_label/jocor
+        sh run_pretrain_loc.sh
+        sh run_train_loc.sh
+        cd ..
+        ```
+
+    - **Retrain**
+       ```bash
+      cd AutoVF/AutoVF-main/ablation_model/noise_label/jocor
+      sh run_pretrain.sh
+      sh run_train.sh
+      sh run_test.sh
+      cd ..
+       ```
 
 
