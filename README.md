@@ -296,6 +296,7 @@ Python 3.9.7 is recommended, which has been fully tested without issues.
        ```
 #### Reproduce Section 4 - RQ4
 Repeat experiments with different interpolation parameters
+<<<<<<< HEAD
  - **Inference**
         ```bash
         cd AutoVF/AutoVF-main/Parameter/Interpolation Parameter
@@ -328,3 +329,43 @@ Repeat experiments with different compensation parameters
       sh run_test.sh
       cd ..
        ```
+=======
+
+- **Inference**
+    ```bash
+    cd AutoVF/AutoVF-main/Parameter/Interpolation Parameter
+    sh run_pretrain_loc.sh
+    sh run_train_loc.sh
+    cd ..
+    ```
+
+- **Retrain**
+    ```bash
+    cd AutoVF/AutoVF-main/Parameter/Interpolation Parameter
+    sh run_pretrain.sh
+    sh run_train.sh
+    sh run_test.sh
+    cd ..
+    ```
+
+#### Reproduce Section 4 - RQ5
+Repeat experiments with different compensation parameters
+
+- **Inference**
+    ```bash
+    cd AutoVF/AutoVF-main/Parameter/Compensation Parameter
+    sh run_pretrain_loc.sh
+    sh run_train_loc.sh
+    cd ..
+    ```
+
+- **Retrain**
+    ```bash
+    cd AutoVF/AutoVF-main/Parameter/Compensation Parameter
+    sh run_pretrain.sh
+    sh run_train.sh
+    sh run_test.sh
+    cd ..
+    ```
+
+>>>>>>> parent of d7fa2d8 (upload)
