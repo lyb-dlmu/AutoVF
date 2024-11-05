@@ -367,5 +367,3 @@ Repeat experiments with different compensation parameters
     sh run_test.sh
     cd ..
     ```
-
->>>>>>> parent of d7fa2d8 (upload)
