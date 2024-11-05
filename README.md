@@ -20,14 +20,14 @@ First of all, clone this repository to your local machine and access the main di
 ```bash
 git clone https://github.com/awsm-research/VQM.git
 cd AutoVF
-
+```bash
 Then, install the python dependencies via the following command:
 ```bash
 pip install -r requirements.txt
 cd AutoVF/transformers
 pip install .
 cd ../..
-
+```bash
 - We highly recommend you check out this [installation guide](https://pytorch.org/) for the "torch" library so you can install the appropriate version on your device.
 - To utilize GPU (optional), you also need to install the CUDA library. You may want to check out this installation guide.
 - Python [3.9.7](https://www.python.org/downloads/release/python-397/) is recommended, which has been fully tested without issues.
