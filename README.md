@@ -13,14 +13,17 @@ argparse -v:1.4.0
 # Table of contents  
 ## How to reprduce   
 <details>
-  <summary>### Environment Setup: </summary>
+  <summary>Setup Instructions</summary>
 
-- 项目概述
-- 安装说明
-- 使用教程
-- 贡献指南
-- 许可协议
+First of all, clone this repository to your local machine and access the main directory via the following command:
 
-</details>
+```bash
+git clone https://github.com/awsm-research/VQM.git
+cd AutoVF
+pip install -r requirements.txt
+cd AutoVF/transformers
+pip install .
+cd ../..
+
 
 
