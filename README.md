@@ -60,6 +60,32 @@ Python 3.9.7 is recommended, which has been fully tested without issues.
        sh run_test.sh
        cd ..
        ```
+ - **VQM**
+
+    - **Inference**
+        ```bash
+        cd VQM/saved_models/checkpoint-best-loss
+        sh download_models.sh
+        cd ../..
+        sh run_test.sh
+        cd ..
+        ```
+
+    - **Retrain Localization Model**
+       ```bash
+       cd VQM
+       sh run_pretrain_loc.sh
+       sh run_train_loc.sh
+       cd ..
+       ```
+    - **Retrain Repair Model**
+       ```bash
+       cd VQM
+       sh run_pretrain.sh
+       sh run_train.sh
+       sh run_test.sh
+       cd ..
+       ```
 
 
 
