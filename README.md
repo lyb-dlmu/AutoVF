@@ -11,6 +11,16 @@ scikit-learn -v:1.1.2
 tree-sitter -v:0.20.0  
 argparse -v:1.4.0  
 # Table of contents  
-## How to reprduce  
-Environment Setup  
- 
+## How to reprduce   
+<details>
+  <summary>### Environment Setup: </summary>
+
+- 项目概述
+- 安装说明
+- 使用教程
+- 贡献指南
+- 许可协议
+
+</details>
+
+
