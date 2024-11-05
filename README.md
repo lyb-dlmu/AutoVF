@@ -1,5 +1,5 @@
 # AutoVF  
-## AutoVF:Make Automated Vulnerability Fixes Robust with Co-Learning  
+## AutoVF: Make Automated Vulnerability Fixes Robust with Co-Learning  
 Python library dependencies:  
 torch -v:1.10.2+cu113  
 numpy -v:1.22.3  
@@ -10,19 +10,21 @@ gdown -v:4.5.1
 scikit-learn -v:1.1.2  
 tree-sitter -v:0.20.0  
 argparse -v:1.4.0  
-# Table of contents  
+
+Dataset:  
+Download necessary data and unzip via the following command:  
+```bash
+cd data
+sh download_data.sh 
+cd ..
+```
 ## How to reprduce   
 <details>
   <summary>Environment Setup</summary>
-
-First of all, clone this repository to your local machine and access the main directory via the following command:
-
+Install the python dependencies via the following command:
+  
 ```bash
-git clone https://github.com/awsm-research/VQM.git
 cd AutoVF
-```
-Then, install the python dependencies via the following command:
-```
 pip install -r requirements.txt
 cd AutoVF/transformers
 pip install .
@@ -34,6 +36,24 @@ To utilize GPU (optional), you also need to install the CUDA library. You may wa
 
 Python 3.9.7 is recommended, which has been fully tested without issues.
 
-</details> 
+</details>   
 
+## If you want to use our model,you need to follow these steps:
+
+## AutoVF (our Approach)
+### Retrain Localization Model
+```bash
+cd AutoVF
+sh run_pretrain_loc.sh
+sh run_train_loc.sh
+cd ..
+```
+### Retrain Repair Model
+```bash
+cd NRlearn
+sh run_pretrain.sh
+sh run_train.sh
+sh run_test.sh
+cd ..
+```
 
