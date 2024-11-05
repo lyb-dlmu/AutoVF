@@ -1,7 +1,7 @@
 python run.py \
     --load_pretrained_model \
-    --pretrained_model_name=pretrained_mask_model.bin \
-    --model_name=fine_tuned_mask_model.bin \
+    --pretrained_model_name=fresh_pretrained_model.bin \
+    --model_name=fresh_fine_tuned_model.bin \
     --output_dir=./saved_models \
     --tokenizer_name=Salesforce/codet5-base \
     --model_name_or_path=Salesforce/codet5-base \
@@ -18,3 +18,4 @@ python run.py \
     --max_grad_norm 1.0 \
     --evaluate_during_training \
     --seed 123456  2>&1 | tee train.log
+
