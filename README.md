@@ -18,7 +18,6 @@ argparse -v:1.4.0
 First of all, clone this repository to your local machine and access the main directory via the following command:
 
 ```bash
-```
 git clone https://github.com/awsm-research/VQM.git
 cd AutoVF
 ```
