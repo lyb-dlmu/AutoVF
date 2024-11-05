@@ -34,6 +34,6 @@ To utilize GPU (optional), you also need to install the CUDA library. You may wa
 
 Python 3.9.7 is recommended, which has been fully tested without issues.
 
-</details> ```
+</details> 
 
 
