@@ -19,7 +19,7 @@ sh download_data.sh
 cd ..
 ```
 ## How to reprduce   
-<details>
+
   <summary>Environment Setup</summary>
 Install the python dependencies via the following command:
   
@@ -36,7 +36,7 @@ To utilize GPU (optional), you also need to install the CUDA library. You may wa
 
 Python 3.9.7 is recommended, which has been fully tested without issues.
 
-</details>   
+
 
 ## If you want to use our model,you need to follow these steps:
 
