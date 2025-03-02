@@ -44,7 +44,7 @@ Python 3.9.7 is recommended, which has been fully tested without issues.
 ### Reproduction of Experiments
 #### Reproduce Section 4 - RQ1
 
-- **NRLearn(Proposed Approach)**
+- **AutoVF(Proposed Approach)**
 
     - **Retrain Localization Model**
         ```bash
